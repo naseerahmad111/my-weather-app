@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Province Weather App</title>
+    <link rel="stylesheet" href="weatherapp.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>🌦️ Weather Application</h1>
+
+        <div class="search-box">
+            <input type="text" id="provinceInput" placeholder="Enter province name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <div id="weather" class="weather hidden">
+            <h2 id="location"></h2>
+
+            <div class="current">
+                <p>🌡️ Temperature: <span id="temp"></span> °C</p>
+                <p>💧 Humidity: <span id="humidity"></span>%</p>
+                <p>🌬️ Wind Speed: <span id="wind"></span> m/s</p>
+                <p>☁️ Condition: <span id="condition"></span></p>
+            </div>
+
+            <h3>5-Day Forecast</h3>
+            <div id="forecast" class="forecast"></div>
+        </div>
+    </div>
+
+    <script src="weatherapp.js"></script>
+</body>
+</html>
